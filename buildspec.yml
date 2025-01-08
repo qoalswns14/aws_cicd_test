@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+  build:
+    commands:
+      - echo Building the application...
+      - mkdir -p output
+      - echo "Hello, World!" > output/index.html
+
+artifacts:
+  files:
+    - output/**   # 빌드 결과물
+    - appspec.yml
+    - scripts/**
