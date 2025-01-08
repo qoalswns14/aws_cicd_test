@@ -10,7 +10,7 @@ sudo git clone https://github.com/qoalswns14/aws_cicd_test.git /var/www/html/tem
 # 기존 폴더 삭제 및 새로운 폴더 복사
 echo "Moving files to /var/www/html..."
 sudo rm -rf /var/www/html/*
-sudo cp -r /var/www/html/temp_repo/* /var/www/html/
+sudo cp -r /var/www/html/temp_repo/index.html /var/www/html/
 
 # 임시 폴더 삭제
 echo "Cleaning up temporary files..."
